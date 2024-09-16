@@ -1,0 +1,348 @@
+/** @format */
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  font-family: "Open Sans", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  color: #4f4f4f;
+
+  --primary: #132a3e;
+  --primary-button: #21425e;
+
+  --secondary: #f1c179;
+  --secondary-modif: #dfb076;
+
+  --accent-blue: #3987a2;
+  --accent-blue-modif: #2d6a7a;
+
+  --accent-red: #f51919;
+  --accent-red-modif: #d11010;
+
+  --background: #ffffff;
+
+  --light: #f2f2f2;
+  --light-modif: #e0e0e0;
+
+  --light-bold: #e5e5e5;
+  --light-bold-modif: #cccccc;
+
+  --text-color: #4f4f4f;
+
+  --text-opacity: #878787;
+
+  --lg-resp: 230px;
+  --lg-resp-normal: 120px;
+  --md-resp: 60px;
+  --sm-resp: 20px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+ul.circles {
+  list-style: none;
+  display: flex;
+}
+
+/* Pour les pubs */
+
+.circles li {
+  width: 15px;
+  height: 15px;
+  margin: 0px 5px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  -webkit-animation: bounce 0.75s infinite alternate;
+  -moz-animation: bounce 0.75s infinite alternate;
+  -o-animation: bounce 0.75s infinite alternate;
+  animation: bounce 0.75s infinite alternate;
+}
+
+.circles li:nth-child(2) {
+  animation-delay: 250ms;
+}
+
+.circles li:nth-child(3) {
+  animation-delay: 500ms;
+}
+
+@-webkit-keyframes bounce {
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+@-moz-keyframes bounce {
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+@-o-keyframes bounce {
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes bounce {
+  to {
+    transform: translateY(-20px);
+  }
+}
+
+/* Pour le loading */
+
+.circles-loading li {
+  width: 150px;
+  height: 150px;
+  margin: 0px 5px;
+  background-color: #b3b3b3;
+  border-radius: 50%;
+  -webkit-animation: bounce-loading 0.75s infinite alternate;
+  -moz-animation: bounce-loading 0.75s infinite alternate;
+  -o-animation: bounce-loading 0.75s infinite alternate;
+  animation: bounce-loading 0.75s infinite alternate;
+}
+
+.circles-loading li:nth-child(2) {
+  animation-delay: 250ms;
+}
+
+.circles-loading li:nth-child(3) {
+  animation-delay: 500ms;
+}
+
+@-webkit-keyframes bounce-loading {
+  to {
+    transform: translateY(-105px);
+  }
+}
+
+@-moz-keyframes bounce-loading {
+  to {
+    transform: translateY(-105px);
+  }
+}
+
+@-o-keyframes bounce-loading {
+  to {
+    transform: translateY(-105px);
+  }
+}
+
+@keyframes bounce-loading {
+  to {
+    transform: translateY(-105px);
+  }
+}
+
+/* Pour le modal où l'on modifie les informations */
+
+.dropOpacityAnimation {
+  -webkit-animation: dropOpacity 4s linear;
+  -moz-animation: dropOpacity 4s linear;
+  -o-animation: dropOpacity 4s linear;
+  animation: dropOpacity 4s linear;
+}
+
+@-webkit-keyframes dropOpacity {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 30%;
+  }
+}
+
+@-moz-keyframes dropOpacity {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 30%;
+  }
+}
+
+@-o-keyframes dropOpacity {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 30%;
+  }
+}
+
+@keyframes dropOpacity {
+  from {
+    opacity: 100%;
+  }
+
+  to {
+    opacity: 30%;
+  }
+}
+
+.slideInGreenAnimation {
+  -webkit-animation: slideInGreen 2s linear;
+  -moz-animation: slideInGreen 2s linear;
+  -o-animation: slideInGreen 2s linear;
+  animation: slideInGreen 2s linear;
+}
+
+@-webkit-keyframes slideInGreen {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@-moz-keyframes slideInGreen {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@-o-keyframes slideInGreen {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes slideInGreen {
+  from {
+    width: 0%;
+  }
+
+  to {
+    width: 100%;
+  }
+}
+
+.scrollbar-always-visible::-webkit-scrollbar {
+  height: 4px;
+}
+
+.scrollbar-always-visible::-webkit-scrollbar-thumb {
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 4px;
+}
+
+.scrollbar-always-visible::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+input,
+textarea {
+  color: var(--text-color);
+}
+
+.custom-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 50;
+  cursor: pointer;
+}
+
+/* Pour le slidegr dans categories */
+
+.custom-arrow.next {
+  right: 0px;
+  font-size: 30px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.custom-arrow.prev {
+  left: 0px;
+  font-size: 30px;
+  color: white;
+  transition: all 0.3s;
+}
+
+.custom-arrow.next:hover,
+.custom-arrow.prev:hover {
+  color: var(--light-bold);
+}
+
+/* Pour le slider product */
+
+.custom-arrow.next-product {
+  right: 0px;
+  font-size: 40px;
+  color: #4f4f4f;
+  transition: all 0.3s;
+}
+
+.custom-arrow.prev-product {
+  left: 0px;
+  font-size: 40px;
+  color: #4f4f4f;
+  transition: all 0.3s;
+}
+
+.custom-arrow.next-product:hover,
+.custom-arrow.prev-product:hover {
+  color: var(--primary);
+}
+
+/* Pour les produits dans les cartes */
+
+.custom-arrow.next-card {
+  left: 100%;
+  font-size: 40px;
+  color: var(--primary-button);
+  transition: all 0.3s;
+}
+
+.custom-arrow.prev-card {
+  right: 100%;
+  font-size: 40px;
+  color: var(--primary-button);
+  transition: all 0.3s;
+}
+
+.custom-arrow.next-card:hover,
+.custom-arrow.prev-card:hover {
+  color: var(--primary);
+}
+
+/* Pour le produit dans modifier annonce */
+.custom-arrow.next-dispModif {
+  left: 100%;
+  font-size: 25px;
+  color: var(--primary-button);
+  transition: all 0.3s;
+}
+
+.custom-arrow.prev-dispModif {
+  right: 100%;
+  font-size: 25px;
+  color: var(--primary-button);
+  transition: all 0.3s;
+}
+
+.custom-arrow.next-dispModif:hover,
+.custom-arrow.prev-dispModif:hover {
+  color: var(--primary);
+}
