@@ -233,7 +233,7 @@ export default function Modifier_annonce() {
           icon={<FontAwesomeIcon icon={faMoneyBill} className="text-xl" />}
         />
 
-        <CategoryArticle className={"w-[470px]"} />
+        <CategoryArticle className={"w-[469px]"} />
       </InfoPart>
     </section>
   );
