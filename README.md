@@ -1,3 +1,9 @@
+Maquette:
+
+Pour lancer le projet faites: npm run dev-
+
+PS : N'oubliez pas de taper la commande "npm install" pour installer les dépendances si cela ne fonctionne pas.
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
