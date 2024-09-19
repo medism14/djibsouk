@@ -1,6 +1,6 @@
 Maquette: https://www.figma.com/design/lfMBbmIKU5RndN0CbxZvBH/DjibSouk?node-id=140-870&t=quWDjXPx42AmyqXz-1
 
-Pour lancer le projet faites: npm run dev-
+Pour lancer le projet faites: npm run dev
 
 PS : N'oubliez pas de taper la commande "npm install" pour installer les dépendances si cela ne fonctionne pas.
 
